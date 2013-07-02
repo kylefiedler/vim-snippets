@@ -23,14 +23,6 @@ snippet hover
 	}
 
 #Bourbon Snippets
-snippet bgz
-	@include background-size(${1});
-snippet bgz:a
-	@include background-size(auto);
-snippet bgz:ct
-	@include background-size(contain);
-snippet bgz:cv
-	@include background-size(cover);
 snippet bxz
 	@include box-sizing(${1});
 snippet bxz:bb
@@ -174,13 +166,13 @@ snippet bgr:y
 	background-repeat: repeat-y;
 snippet bgr:r
 	background-repeat: repeat;
-snippet -bgz
+snippet bgz
 	background-size:${1};${2}
-snippet -bgz:a
+snippet bgz:a
 	background-size: auto;
-snippet -bgz:ct
+snippet bgz:ct
 	background-size: contain;
-snippet -bgz:cv
+snippet bgz:cv
 	background-size: cover;
 snippet bg
 	background: ${1};${2}
