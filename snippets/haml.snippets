@@ -1,20 +1,252 @@
-snippet t
-	%table
-		%tr
-			%th
-				${1:headers}
-		%tr
-			%td
-				${2:headers}
-snippet ul
-	%ul
-		%li
-			${1:item}
-		%li
-snippet =rp
-	= render :partial => '${1:partial}'
-snippet =rpl
-	= render :partial => '${1:partial}', :locals => {}
-snippet =rpc
-	= render :partial => '${1:partial}', :collection => @$1
+# Rails
+snippet trans
+	%= t('.${1}')
+snippet link_to
+  = link_to(${1}, ${2})
 
+# Attributes
+snippet attr
+	${1:attribute}="${2:property}"
+snippet attr+
+	${1:attribute}="${2:property}" attr+${3}
+snippet .
+	class="${1}"${2}
+snippet #
+	id="${1}"${2}
+snippet alt
+	alt="${1}"${2}
+snippet charset
+	charset="${1:utf-8}"${2}
+snippet data
+	data-${1}="${2:$1}"${3}
+snippet for
+	for="${1}"${2}
+snippet height
+	height="${1}"${2}
+snippet href
+	href="${1:#}"${2}
+snippet lang
+	lang="${1:en}"${2}
+snippet media
+	media="${1}"${2}
+snippet name
+	name="${1}"${2}
+snippet rel
+	rel="${1}"${2}
+snippet scope
+	scope="${1:row}"${2}
+snippet src
+	src="${1}"${2}
+snippet title=
+	title="${1}"${2}
+snippet type
+	type="${1}"${2}
+snippet value
+	value="${1}"${2}
+snippet width
+	width="${1}"${2}
+
+# Elements
+snippet a
+	%a{:href => "${1:#}"} ${2:$1}
+
+snippet abbr
+	%abbr{:title => "${1}"} ${2}
+snippet address
+	%address
+		${1}
+snippet article
+	%article
+		${1}
+snippet aside
+	%aside
+		${1}
+snippet blockquote
+	%blockquote
+		${1}
+snippet body
+	%body
+		${1}
+snippet br
+	%br/
+snippet button
+	%button{:type => "${1:submit}"}
+snippet caption
+	%caption ${1}
+snippet cite
+	%cite ${1}
+snippet code
+	%code ${1}
+snippet dd
+	%dd ${1}
+snippet del
+	%del ${1}
+snippet details
+	%details ${1}
+snippet dfn
+	%dfn ${1}
+snippet dialog
+	%dialog
+		${1}
+snippet div
+	%div
+		${1}
+snippet dl
+	%dl
+		${1}
+snippet dl+
+	%dl
+		%dt ${1}
+		%dd ${2}
+snippet dt
+	%dt ${1}
+snippet dt+
+	%dt ${1}
+	%dd ${2}
+snippet em
+	%em ${1}
+snippet fieldset
+	%fieldset
+		${1}
+snippet figcaption
+	%figcaption ${1}
+snippet figure
+	%figure ${1}
+snippet footer
+	%footer
+		${1}
+snippet form
+	%form
+		${1}
+snippet h1
+	%h1 ${1}
+snippet h2
+	%h2 ${1}
+snippet h3
+	%h3 ${1}
+snippet h4
+	%h4 ${1}
+snippet h5
+	%h5 ${1}
+snippet h6
+	%h6 ${1}
+snippet header
+	%header
+		${1}
+snippet hgroup
+	%hgroup
+		${1}
+snippet hr
+	%hr/
+snippet html5
+	!!! 5
+	%html
+		%head
+			<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+			%title ${1:`substitute(Filename('', 'Page Title'), '^.', '\u&', '')`}
+			%link{:href => "/favicon.ico", :rel => "shortcut icon"}/
+			%meta{:name => "viewport", :content => "width=device-width; initial-scale=1.0; maximum-scale=1.0;"}
+			${2:meta}
+		%body
+			${3:body}
+snippet i
+	%i ${1}
+snippet img
+  %img{:src => "${1}", :alt => "${2}"}/${3}
+snippet img.
+  %img{:class => "${1}", :src => "${2}", :alt => "${3}"}/${4}
+snippet img#
+	%img{:id => "${1}", :src => "${2}", :alt => "${3}"}/${4}
+snippet input
+  %input{:type => "${1:text/submit/hidden/button/image}", :name => "${2}", :id => "${3:$2}", :value => "${4}" }/
+snippet label
+	%label ${1}
+snippet legend
+	%legend ${1}
+snippet li
+	%li ${1}
+snippet li+
+	%li ${1}
+	li+${2}
+snippet lia
+	%li
+		%a{:href => "${2:#}"} ${1}
+snippet nav
+	%nav
+		${1}
+snippet ol
+	%ol
+		%li ${1}
+		li+${2}
+snippet opt
+	%option{:value => "${1}"} ${2:$1}
+	opt+${3}
+snippet optgroup
+	%optgroup
+		%option{value="${1}"} ${2:$1}
+		opt+${3}
+snippet output
+	%output ${1}
+snippet p
+	%p
+		${1}
+snippet pre
+	%pre
+		${1}
+snippet s
+	%s ${1}
+snippet section
+	%section
+		${1}
+snippet select
+	%select
+		%option{value="${1}"} ${2:$1}
+		opt+${3}
+snippet small
+	%small ${1}
+snippet span
+	%span ${1}
+snippet strong
+	%strong ${1}
+snippet style
+	%style{:type => "text/css", :media => "${1:all}"}>
+		${2}
+snippet sub
+	%sub ${1}
+snippet summary
+	%summary
+		${1}
+snippet sup
+	%sup ${1}
+snippet table
+	%table
+		${2}
+snippet tbody
+	%tbody
+		${1}
+snippet td
+	%td ${1}
+snippet textarea
+  %textarea{ :name => "${1}", :id => ${2:$1}, :rows => "${3:8}", :cols => "${4:40}"} ${5}
+snippet tfoot
+	%tfoot
+		${1}
+snippet th
+	%th ${1}
+snippet thead
+	%thead
+		${1}
+snippet time
+	%time{:datetime => "${1}", :pubdate => "${2:$1}"} ${3:$1}
+snippet tr
+	%tr
+		${1}
+snippet tr+
+	%tr
+		%td ${1}
+		td+${2}
+	</tr>
+snippet ul+
+	%ul
+		%li ${1}
+		li+${2}

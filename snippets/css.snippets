@@ -1,8 +1,8 @@
 #Sass Snippets
 snippet @i
-	@import "${1}";
+	@import "${1}";${2}
 snippet ext
-	@extend ${1};
+	@extend ${1};${2}
 snippet inc
 	@include ${1}(${2});${3}
 snippet @m
@@ -24,19 +24,19 @@ snippet hover
 
 #Bourbon Snippets
 snippet bxz
-	@include box-sizing(${1});
+	@include box-sizing(${1});${2}
 snippet bxz:bb
 	@include box-sizing(border-box);
 snippet button
-	@include button(${1});
+	@include button(${1});${2}
 snippet clf
 	@include clearfix;
 snippet d:ib
 	@include inline-block;
-snippet hdt
+snippet hide-text
 	@include hide-text;
 snippet imr
-	@include image-rendering(${1});
+	@include image-rendering(${1});${2}
 snippet imr:o
 	@include image-rendering(optimizeSpeed);
 snippet inputs
@@ -44,13 +44,13 @@ snippet inputs
 		${1}
 	}
 snippet lg
-	@include linear-gradient(${1}, ${2});
+	@include linear-gradient(${1}, ${2});${3}
 snippet pos
 	@include position(${1}, ${2});${3}
 snippet pos:a
-	@include position(absolute, ${1: 0 0 0 0});
+	@include position(absolute, ${1:0} ${2:0} ${3:0} ${4:0});
 snippet pos:f
-	@include position(fixed, ${1: 0 0 0 0});
+	@include position(fixed, ${1:0} ${2:0} ${3:0} ${4:0}});
 snippet rg
 	@include radial-gradient(${1}, ${2});
 snippet trns
@@ -60,7 +60,7 @@ snippet trns+
 snippet trfm
 	@include transform(${1});
 snippet size
-	@include size($1);
+	@include size(${1});
 
 #Bourbon Functions
 snippet gw
