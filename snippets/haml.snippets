@@ -152,13 +152,13 @@ snippet html5
 snippet i
 	%i ${1}
 snippet img
-  %img{:src => "${1}", :alt => "${2}"}/${3}
+	%img{:src => "${1}", :alt => "${2}"}/${3}
 snippet img.
-  %img{:class => "${1}", :src => "${2}", :alt => "${3}"}/${4}
+	%img{:class => "${1}", :src => "${2}", :alt => "${3}"}/${4}
 snippet img#
 	%img{:id => "${1}", :src => "${2}", :alt => "${3}"}/${4}
 snippet input
-  %input{:type => "${1:text/submit/hidden/button/image}", :name => "${2}", :id => "${3:$2}", :value => "${4}" }/
+	%input{:type => "${1:text/submit/hidden/button/image}", :name => "${2}", :id => "${3:$2}", :value => "${4}" }/
 snippet label
 	%label ${1}
 snippet legend
@@ -227,7 +227,7 @@ snippet tbody
 snippet td
 	%td ${1}
 snippet textarea
-  %textarea{ :name => "${1}", :id => ${2:$1}, :rows => "${3:8}", :cols => "${4:40}"} ${5}
+	%textarea{ :name => "${1}", :id => ${2:$1}, :rows => "${3:8}", :cols => "${4:40}"} ${5}
 snippet tfoot
 	%tfoot
 		${1}
