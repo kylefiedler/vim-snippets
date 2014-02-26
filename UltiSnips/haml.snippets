@@ -1,0 +1,325 @@
+# Rails
+snippet trans
+	%= t('.${1}')
+endsnippet
+snippet link_to
+	= link_to(${1}, ${2})
+endsnippet
+
+# Attributes
+#snippet attr
+#	${1:attribute}="${2:property}"
+#snippet attr+
+#	${1:attribute}="${2:property}" attr+${3}
+#snippet .
+#	class="${1}"${2}
+#snippet #
+#	id="${1}"${2}
+#snippet alt
+#	alt="${1}"${2}
+#snippet charset
+#	charset="${1:utf-8}"${2}
+#snippet data
+#	data-${1}="${2:$1}"${3}
+#snippet for
+#	for="${1}"${2}
+#snippet height
+#	height="${1}"${2}
+#snippet href
+#	href="${1:#}"${2}
+#snippet lang
+#	lang="${1:en}"${2}
+#snippet media
+#	media="${1}"${2}
+#snippet name
+#	name="${1}"${2}
+#snippet rel
+#	rel="${1}"${2}
+#snippet scope
+#	scope="${1:row}"${2}
+#snippet src
+#	src="${1}"${2}
+#snippet title=
+#	title="${1}"${2}
+#snippet type
+#	type="${1}"${2}
+#snippet value
+#	value="${1}"${2}
+#snippet width
+#	width="${1}"${2}
+
+# Elements
+snippet a
+	%a{:href => "${1:#}"} ${2:$1}
+endsnippet
+
+snippet abbr
+	%abbr{:title => "${1}"} ${2}
+endsnippet
+snippet address
+	%address
+		${1}
+endsnippet
+snippet article
+	%article
+		${1}
+endsnippet
+snippet aside
+	%aside
+		${1}
+endsnippet
+snippet blockquote
+	%blockquote
+		${1}
+endsnippet
+snippet body
+	%body
+		${1}
+endsnippet
+snippet br
+	%br/
+endsnippet
+snippet button
+	%button{:type => "${1:submit}"}
+endsnippet
+snippet caption
+	%caption ${1}
+endsnippet
+snippet cite
+	%cite ${1}
+endsnippet
+snippet code
+	%code ${1}
+endsnippet
+snippet dd
+	%dd ${1}
+endsnippet
+snippet del
+	%del ${1}
+endsnippet
+snippet details
+	%details ${1}
+endsnippet
+snippet dfn
+	%dfn ${1}
+endsnippet
+snippet dialog
+	%dialog
+		${1}
+endsnippet
+snippet div
+	%div
+		${1}
+endsnippet
+snippet dl
+	%dl
+		${1}
+endsnippet
+snippet dl+
+	%dl
+		%dt ${1}
+		%dd ${2}
+endsnippet
+snippet dt
+	%dt ${1}
+endsnippet
+snippet dt+
+	%dt ${1}
+	%dd ${2}
+endsnippet
+snippet em
+	%em ${1}
+endsnippet
+snippet fieldset
+	%fieldset
+		${1}
+endsnippet
+snippet figcaption
+	%figcaption ${1}
+endsnippet
+snippet figure
+	%figure ${1}
+endsnippet
+snippet footer
+	%footer
+		${1}
+endsnippet
+snippet form
+	%form
+		${1}
+endsnippet
+snippet h1
+	%h1 ${1}
+endsnippet
+snippet h2
+	%h2 ${1}
+endsnippet
+snippet h3
+	%h3 ${1}
+endsnippet
+snippet h4
+	%h4 ${1}
+endsnippet
+snippet h5
+	%h5 ${1}
+endsnippet
+snippet h6
+	%h6 ${1}
+endsnippet
+snippet header
+	%header
+		${1}
+endsnippet
+snippet hr
+	%hr/
+endsnippet
+snippet html5
+	!!! 5
+	%html
+		%head
+			<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+			%title ${1}
+			%link{:href => "/favicon.ico", :rel => "shortcut icon"}/
+			%meta{:name => "viewport", :content => "width=device-width; initial-scale=1.0; maximum-scale=1.0;"}
+			${2:meta}
+		%body
+			${3:body}
+snippet i
+	%i ${1}
+endsnippet
+snippet img
+	%img{:src => "${1}", :alt => "${2}"}/${3}
+endsnippet
+snippet img.
+	%img{:class => "${1}", :src => "${2}", :alt => "${3}"}/${4}
+endsnippet
+snippet img#
+	%img{:id => "${1}", :src => "${2}", :alt => "${3}"}/${4}
+endsnippet
+snippet input
+	%input{:type => "${1:text/submit/hidden/button/image}", :name => "${2}", :id => "${3:$2}", :value => "${4}" }/
+endsnippet
+snippet label
+	%label ${1}
+endsnippet
+snippet legend
+	%legend ${1}
+endsnippet
+snippet li
+	%li ${1}
+endsnippet
+snippet li+
+	%li ${1}
+	li+${2}
+endsnippet
+snippet lia
+	%li
+		%a{:href => "${2:#}"} ${1}
+endsnippet
+snippet nav
+	%nav
+		${1}
+endsnippet
+snippet ol
+	%ol
+		%li ${1}
+		li+${2}
+endsnippet
+snippet opt
+	%option{:value => "${1}"} ${2:$1}
+	opt+${3}
+endsnippet
+snippet optgroup
+	%optgroup
+		%option{value="${1}"} ${2:$1}
+		opt+${3}
+endsnippet
+snippet output
+	%output ${1}
+endsnippet
+snippet p
+	%p
+		${1}
+endsnippet
+snippet pre
+	%pre
+		${1}
+endsnippet
+snippet s
+	%s ${1}
+endsnippet
+snippet section
+	%section
+		${1}
+endsnippet
+snippet select
+	%select
+		%option{value="${1}"} ${2:$1}
+		opt+${3}
+endsnippet
+snippet small
+	%small ${1}
+endsnippet
+snippet span
+	%span ${1}
+endsnippet
+snippet strong
+	%strong ${1}
+endsnippet
+snippet style
+	%style{:type => "text/css", :media => "${1:all}"}>
+		${2}
+endsnippet
+snippet sub
+	%sub ${1}
+endsnippet
+snippet summary
+	%summary
+		${1}
+endsnippet
+snippet sup
+	%sup ${1}
+endsnippet
+snippet table
+	%table
+		${2}
+endsnippet
+snippet tbody
+	%tbody
+		${1}
+endsnippet
+snippet td
+	%td ${1}
+endsnippet
+snippet textarea
+	%textarea{ :name => "${1}", :id => ${2:$1}, :rows => "${3:8}", :cols => "${4:40}"} ${5}
+endsnippet
+snippet tfoot
+	%tfoot
+		${1}
+endsnippet
+snippet th
+	%th ${1}
+endsnippet
+snippet thead
+	%thead
+		${1}
+endsnippet
+snippet time
+	%time{:datetime => "${1}", :pubdate => "${2:$1}"} ${3:$1}
+endsnippet
+snippet tr
+	%tr
+		${1}
+endsnippet
+snippet tr+
+	%tr
+		%td ${1}
+		td+${2}
+	</tr>
+endsnippet
+snippet ul+
+	%ul
+		%li ${1}
+		li+${2}
+endsnippet
