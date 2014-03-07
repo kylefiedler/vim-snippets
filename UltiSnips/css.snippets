@@ -252,34 +252,34 @@ snippet bgz:cv
 background-size: cover;
 endsnippet
 snippet bg
-	background: ${1};${2}
+background: ${1};${2}
 endsnippet
 snippet bg:n
-	background: none;
+background: none;
 endsnippet
-snippet bd+
-	border: ${1:1px} ${2:solid} #${3:000};${4}
+snippet bd
+border: ${1:1px} ${2:solid} ${3:$base-border-color};${4}
 endsnippet
 snippet bdb+
-	border-bottom: ${1:1px} ${2:solid} #${3:000};${4}
+border-bottom: ${1:1px} ${2:solid} ${3:#000};${4}
 endsnippet
 snippet bdbc
-	border-bottom-color: #${1:000};${2}
+border-bottom-color: ${1:#000};${2}
 endsnippet
 snippet bdbi
-	border-bottom-image: url(${1});${2}
+border-bottom-image: url(${1});${2}
 endsnippet
 snippet bdbi:n
-	border-bottom-image: none;
+border-bottom-image: none;
 endsnippet
 snippet bdbli
-	border-bottom-left-image: url(${1});${2}
+border-bottom-left-image: url(${1});${2}
 endsnippet
 snippet bdbli:c
-	border-bottom-left-image: continue;
+border-bottom-left-image: continue;
 endsnippet
 snippet bdbli:n
-	border-bottom-left-image: none;
+border-bottom-left-image: none;
 endsnippet
 snippet bdblrz
 border-bottom-left-radius: ${1};${2}
@@ -327,7 +327,7 @@ snippet bdcl:s
 border-collapse: separate;
 endsnippet
 snippet bdc
-border-color: #${1:000};${2}
+border-color: ${1:#000};${2}
 endsnippet
 snippet bdci
 border-corner-image: url(${1});${2}
@@ -369,10 +369,10 @@ snippet bdi:n
 border-image: none;
 endsnippet
 snippet bdl+
-border-left: ${1:1px} ${2:solid} #${3:000};${4}
+border-left: ${1:1px} ${2:solid} ${3:#000};${4}
 endsnippet
 snippet bdlc
-border-left-color: #${1:000};${2}
+border-left-color: ${1:#000};${2}
 endsnippet
 snippet bdli
 border-left-image: url(${1});${2}
@@ -405,10 +405,10 @@ snippet bdrz
 border-radius: ${1};${2}
 endsnippet
 snippet bdr+
-border-right: ${1:1px} ${2:solid} #${3:000};${4}
+border-right: ${1:1px} ${2:solid} ${3:#000};${4}
 endsnippet
 snippet bdrc
-border-right-color: #${1:000};${2}
+border-right-color: ${1:#000};${2}
 endsnippet
 snippet bdri
 border-right-image: url(${1});${2}
@@ -477,10 +477,10 @@ snippet bds:w
 border-style: wave;
 endsnippet
 snippet bdt+
-border-top: ${1:1px} ${2:solid} #${3:000};${4}
+border-top: ${1:1px} ${2:solid} ${3:#000};${4}
 endsnippet
 snippet bdtc
-border-top-color: #${1:000};${2}
+border-top-color: ${1:#000};${2}
 endsnippet
 snippet bdti
 border-top-image: url(${1});${2}
@@ -530,7 +530,7 @@ endsnippet
 snippet bdw
 border-width: ${1};${2}
 endsnippet
-snippet bd
+snippet bd-
 border: ${1};${2}
 endsnippet
 snippet bd:n
@@ -543,7 +543,7 @@ snippet b:a
 bottom: auto;
 endsnippet
 snippet bxs
-box-shadow: ${1:0} ${2:0} ${3:0} #${4:000};${5}
+box-shadow: ${1:0} ${2:0} ${3:0} ${4:#000};${5}
 endsnippet
 snippet bxs-
 box-shadow: ${1};${2}
@@ -594,7 +594,7 @@ snippet cp:r
 clip: rect(${1:0} ${2:0} ${3:0} ${4:0});${5}
 endsnippet
 snippet c
-color: #${1:000};${2}
+color: ${1:#000};${2}
 endsnippet
 snippet ct
 content: ${1};${2}
@@ -1064,7 +1064,7 @@ snippet orp
 orphans: ${1};${2}
 endsnippet
 snippet o+
-outline: ${1:1px} ${2:solid} #${3:000};${4}
+outline: ${1:1px} ${2:solid} ${3:#000};${4}
 endsnippet
 snippet ouc
 outline-color: ${1:#000};${2}
@@ -1392,7 +1392,7 @@ snippet tj:t
 text-justify: tibetan;
 endsnippet
 snippet to+
-text-outline: ${1:0} ${2:0} #${3:000};${2}
+text-outline: ${1:0} ${2:0} ${3:#000};${2}
 endsnippet
 snippet to
 text-outline: ${1};${2}
@@ -1407,7 +1407,7 @@ snippet tr:n
 text-replace: none;
 endsnippet
 snippet tsh+
-text-shadow: ${1:0} ${2:0} ${3:0} #${4:000};${5}
+text-shadow: ${1:0} ${2:0} ${3:0} ${4:#000};${5}
 endsnippet
 snippet tsh
 text-shadow: ${1};${2}
