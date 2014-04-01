@@ -1,6 +1,6 @@
 #Sass Snippets
 snippet @i
-@import "${1}";
+@import '${1}';
 endsnippet
 snippet ext
 @extend ${1};
@@ -33,25 +33,22 @@ endsnippet
 
 #Bourbon Snippets
 snippet bxz
-@include box-sizing(${1});${2}
+@include box-sizing(${1});
 endsnippet
 snippet bxz:bb
 @include box-sizing(border-box);
 endsnippet
 snippet button
-@include button(${1});${2}
+@include button(${1});
 endsnippet
 snippet clf
 @include clearfix;
-endsnippet
-snippet d:ib
-@include inline-block;
 endsnippet
 snippet hide-text
 @include hide-text;
 endsnippet
 snippet imr
-@include image-rendering(${1});${2}
+@include image-rendering(${1});
 endsnippet
 snippet imr:o
 @include image-rendering(optimizeSpeed);
@@ -62,10 +59,10 @@ snippet inputs
 }
 endsnippet
 snippet lg
-@include linear-gradient(${1}, ${2});${3}
+@include linear-gradient(${1}, ${2});
 endsnippet
 snippet pos
-@include position(${1}, ${2});${3}
+@include position(${1}, ${2});
 endsnippet
 snippet pos:a
 @include position(absolute, ${1:0} ${2:0} ${3:0} ${4:0});
@@ -97,10 +94,10 @@ snippet gwv
 $gw-column: 100px;          // Column Width
 $gw-gutter: 40px;           // Gutter Width
 endsnippet
-snippet fg
+snippet flg
 flex-grid(${1})
 endsnippet
-snippet fgu
+snippet flgu
 flex-gutter(${1})
 endsnippet
 snippet fgv
@@ -150,7 +147,6 @@ endsnippet
 snippet //
 // ${1}
 //---------------------------------------- //
-${2}
 endsnippet
 snippet bg+
 background: ${1:#fff} url(${2}) ${3:0} ${4:0} ${5:no-repeat};
@@ -219,13 +215,13 @@ snippet bgpx
 background-position-x: ${1};
 endsnippet
 snippet bgpy
-background-position-y: ${1};${2}
+background-position-y: ${1};
 endsnippet
 snippet bgp
-background-position: ${1:0} ${2:0};${3}
+background-position: ${1:0} ${2:0};
 endsnippet
 snippet bgr
-background-repeat: ${1};${2}
+background-repeat: ${1};
 endsnippet
 snippet bgr:n
 background-repeat: no-repeat;
@@ -240,7 +236,7 @@ snippet bgr:r
 background-repeat: repeat;
 endsnippet
 snippet bgz
-background-size:${1};${2}
+background-size:${1};
 endsnippet
 snippet bgz:a
 background-size: auto;
@@ -252,28 +248,28 @@ snippet bgz:cv
 background-size: cover;
 endsnippet
 snippet bg
-background: ${1};${2}
+background: ${1};
 endsnippet
 snippet bg:n
 background: none;
 endsnippet
 snippet bd
-border: ${1:1px} ${2:solid} ${3:$base-border-color};${4}
+border: ${1:1px} ${2:solid} ${3:$base-border-color};
 endsnippet
 snippet bdb+
-border-bottom: ${1:1px} ${2:solid} ${3:#000};${4}
+border-bottom: ${1:1px} ${2:solid} ${3:#000};
 endsnippet
 snippet bdbc
-border-bottom-color: ${1:#000};${2}
+border-bottom-color: ${1:#000};
 endsnippet
 snippet bdbi
-border-bottom-image: url(${1});${2}
+border-bottom-image: url(${1});
 endsnippet
 snippet bdbi:n
 border-bottom-image: none;
 endsnippet
 snippet bdbli
-border-bottom-left-image: url(${1});${2}
+border-bottom-left-image: url(${1});
 endsnippet
 snippet bdbli:c
 border-bottom-left-image: continue;
@@ -282,10 +278,10 @@ snippet bdbli:n
 border-bottom-left-image: none;
 endsnippet
 snippet bdblrz
-border-bottom-left-radius: ${1};${2}
+border-bottom-left-radius: ${1};
 endsnippet
 snippet bdbri
-border-bottom-right-image: url(${1});${2}
+border-bottom-right-image: url(${1});
 endsnippet
 snippet bdbri:c
 border-bottom-right-image: continue;
@@ -294,31 +290,31 @@ snippet bdbri:n
 border-bottom-right-image: none;
 endsnippet
 snippet bdbrrz
-border-bottom-right-radius: ${1};${2}
+border-bottom-right-radius: ${1};
 endsnippet
 snippet bdbs
-border-bottom-style: ${1};${2}
+border-bottom-style: ${1};
 endsnippet
 snippet bdbs:n
 border-bottom-style: none;
 endsnippet
 snippet bdbw
-border-bottom-width: ${1};${2}
+border-bottom-width: ${1};
 endsnippet
 snippet bdb
-border-bottom: ${1};${2}
+border-bottom: ${1};
 endsnippet
 snippet bdb:n
 border-bottom: none;
 endsnippet
 snippet bdbk
-border-break: ${1};${2}
+border-break: ${1};
 endsnippet
 snippet bdbk:c
 border-break: close;
 endsnippet
 snippet bdcl
-border-collapse: ${1};${2}
+border-collapse: ${1};
 endsnippet
 snippet bdcl:c
 border-collapse: collapse;
@@ -327,10 +323,10 @@ snippet bdcl:s
 border-collapse: separate;
 endsnippet
 snippet bdc
-border-color: ${1:#000};${2}
+border-color: ${1:#000};
 endsnippet
 snippet bdci
-border-corner-image: url(${1});${2}
+border-corner-image: url(${1});
 endsnippet
 snippet bdci:c
 border-corner-image: continue;
@@ -339,7 +335,7 @@ snippet bdci:n
 border-corner-image: none;
 endsnippet
 snippet bdf
-border-fit: ${1};${2}
+border-fit: ${1};
 endsnippet
 snippet bdf:c
 border-fit: clip;
@@ -363,79 +359,79 @@ snippet bdf:st
 border-fit: stretch;
 endsnippet
 snippet bdi
-border-image: url(${1}) ${2:0} ${3:0} ${4:0} ${5:0} ${6:stretch} ${7:stretch};${8}
+border-image: url(${1}) ${2:0} ${3:0} ${4:0} ${5:0} ${6:stretch} ${7:stretch};
 endsnippet
 snippet bdi:n
 border-image: none;
 endsnippet
 snippet bdl+
-border-left: ${1:1px} ${2:solid} ${3:#000};${4}
+border-left: ${1:1px} ${2:solid} ${3:#000};
 endsnippet
 snippet bdlc
-border-left-color: ${1:#000};${2}
+border-left-color: ${1:#000};
 endsnippet
 snippet bdli
-border-left-image: url(${1});${2}
+border-left-image: url(${1});
 endsnippet
 snippet bdli:n
 border-left-image: none;
 endsnippet
 snippet bdls
-border-left-style: ${1};${2}
+border-left-style: ${1};
 endsnippet
 snippet bdls:n
 border-left-style: none;
 endsnippet
 snippet bdlw
-border-left-width: ${1};${2}
+border-left-width: ${1};
 endsnippet
 snippet bdl
-border-left: ${1};${2}
+border-left: ${1};
 endsnippet
 snippet bdl:n
 border-left: none;
 endsnippet
 snippet bdlt
-border-length: ${1};${2}
+border-length: ${1};
 endsnippet
 snippet bdlt:a
 border-length: auto;
 endsnippet
 snippet bdrz
-border-radius: ${1};${2}
+border-radius: ${1};
 endsnippet
 snippet bdr+
-border-right: ${1:1px} ${2:solid} ${3:#000};${4}
+border-right: ${1:1px} ${2:solid} ${3:#000};
 endsnippet
 snippet bdrc
-border-right-color: ${1:#000};${2}
+border-right-color: ${1:#000};
 endsnippet
 snippet bdri
-border-right-image: url(${1});${2}
+border-right-image: url(${1});
 endsnippet
 snippet bdri:n
 border-right-image: none;
 endsnippet
 snippet bdrs
-border-right-style: ${1};${2}
+border-right-style: ${1};
 endsnippet
 snippet bdrs:n
 border-right-style: none;
 endsnippet
 snippet bdrw
-border-right-width: ${1};${2}
+border-right-width: ${1};
 endsnippet
 snippet bdr
-border-right: ${1};${2}
+border-right: ${1};
 endsnippet
 snippet bdr:n
 border-right: none;
 endsnippet
 snippet bdsp
-border-spacing: ${1};${2}
+border-spacing: ${1};
 endsnippet
 snippet bds
-border-style: ${1};${2}
+border-style: ${1};
 endsnippet
 snippet bds:ds
 border-style: dashed;
@@ -477,19 +473,19 @@ snippet bds:w
 border-style: wave;
 endsnippet
 snippet bdt+
-border-top: ${1:1px} ${2:solid} ${3:#000};${4}
+border-top: ${1:1px} ${2:solid} ${3:#000};
 endsnippet
 snippet bdtc
-border-top-color: ${1:#000};${2}
+border-top-color: ${1:#000};
 endsnippet
 snippet bdti
-border-top-image: url(${1});${2}
+border-top-image: url(${1});
 endsnippet
 snippet bdti:n
 border-top-image: none;
 endsnippet
 snippet bdtli
-border-top-left-image: url(${1});${2}
+border-top-left-image: url(${1});
 endsnippet
 snippet bdtli:c
 border-corner-image: continue;
@@ -498,10 +494,10 @@ snippet bdtli:n
 border-corner-image: none;
 endsnippet
 snippet bdtlrz
-border-top-left-radius: ${1};${2}
+border-top-left-radius: ${1};
 endsnippet
 snippet bdtri
-border-top-right-image: url(${1});${2}
+border-top-right-image: url(${1});
 endsnippet
 snippet bdtri:c
 border-top-right-image: continue;
@@ -510,16 +506,16 @@ snippet bdtri:n
 border-top-right-image: none;
 endsnippet
 snippet bdtrrz
-border-top-right-radius: ${1};${2}
+border-top-right-radius: ${1};
 endsnippet
 snippet bdts
-border-top-style: ${1};${2}
+border-top-style: ${1};
 endsnippet
 snippet bdts:n
 border-top-style: none;
 endsnippet
 snippet bdtw
-border-top-width: ${1};${2}
+border-top-width: ${1};
 endsnippet
 snippet bdt
 border-top: ${1};
@@ -528,31 +524,31 @@ snippet bdt:n
 border-top: none;
 endsnippet
 snippet bdw
-border-width: ${1};${2}
+border-width: ${1};
 endsnippet
 snippet bd-
-border: ${1};${2}
+border: ${1};
 endsnippet
 snippet bd:n
 border: none;
 endsnippet
 snippet b
-bottom: ${1};${2}
+bottom: ${1};
 endsnippet
 snippet b:a
 bottom: auto;
 endsnippet
 snippet bxs
-box-shadow: ${1:0} ${2:0} ${3:0} ${4:#000};${5}
+box-shadow: ${1:0} ${2:0} ${3:0} ${4:#000};
 endsnippet
 snippet bxs-
-box-shadow: ${1};${2}
+box-shadow: ${1};
 endsnippet
 snippet bxs:n
 box-shadow: none;
 endsnippet
 snippet -bxz
-box-sizing: ${1};${2}
+box-sizing: ${1};
 endsnippet
 snippet -bxz:bb
 box-sizing: border-box;
@@ -561,7 +557,7 @@ snippet bxz:cb
 box-sizing: content-box;
 endsnippet
 snippet cps
-caption-side: ${1};${2}
+caption-side: ${1};
 endsnippet
 snippet cps:b
 caption-side: bottom;
@@ -570,7 +566,7 @@ snippet cps:t
 caption-side: top;
 endsnippet
 snippet cl
-clear: ${1};${2}
+clear: ${1};
 endsnippet
 snippet cl:b
 clear: both;
@@ -585,31 +581,31 @@ snippet cl:r
 clear: right;
 endsnippet
 snippet cp
-clip: ${1};${2}
+clip: ${1};
 endsnippet
 snippet cp:a
 clip: auto;
 endsnippet
 snippet cp:r
-clip: rect(${1:0} ${2:0} ${3:0} ${4:0});${5}
+clip: rect(${1:0} ${2:0} ${3:0} ${4:0});
 endsnippet
 snippet c
-color: ${1:#000};${2}
+color: ${1:#000};
 endsnippet
 snippet ct
-content: ${1};${2}
+content: ${1};
 endsnippet
 snippet ct:a
-content: attr(${1});${2}
+content: attr(${1});
 endsnippet
 snippet ct:cq
 content: close-quote;
 endsnippet
 snippet ct:c
-content: counter(${1});${2}
+content: counter(${1});
 endsnippet
 snippet ct:cs
-content: counters(${1});${2}
+content: counters(${1});
 endsnippet
 snippet ct:ncq
 content: no-close-quote;
@@ -624,10 +620,10 @@ snippet ct:oq
 content: open-quote;
 endsnippet
 snippet coi
-counter-increment: ${1};${2}
+counter-increment: ${1};
 endsnippet
 snippet cor
-counter-reset: ${1};${2}
+counter-reset: ${1};
 endsnippet
 snippet cur
 cursor: ${1};
@@ -657,13 +653,7 @@ snippet cur:t
 cursor: text;
 endsnippet
 snippet d
-display: ${1};${2}
-endsnippet
-snippet d:mib
-display: -moz-inline-box;
-endsnippet
-snippet d:mis
-display: -moz-inline-stack;
+display: ${1};
 endsnippet
 snippet d:b
 display: block;
@@ -671,7 +661,7 @@ endsnippet
 snippet d:cp
 display: compact;
 endsnippet
-snippet -d:ib
+snippet d:ib
 display: inline-block;
 endsnippet
 snippet d:itb
@@ -717,7 +707,7 @@ snippet d:tb
 display: table;
 endsnippet
 snippet ec
-empty-cells: ${1};${2}
+empty-cells: ${1};
 endsnippet
 snippet ec:h
 empty-cells: hide;
@@ -729,7 +719,7 @@ snippet exp
 expression()
 endsnippet
 snippet fl
-float: ${1};${2}
+float: ${1};
 endsnippet
 snippet fl:l
 float: left;
@@ -741,10 +731,10 @@ snippet fl:r
 float: right;
 endsnippet
 snippet f+
-font: ${1:1em} ${2:Georgia},${3:serif};${4}
+font: ${1:1em} ${2:Georgia},${3:serif};
 endsnippet
 snippet fef
-font-effect: ${1};${2}
+font-effect: ${1};
 endsnippet
 snippet fef:eb
 font-effect: emboss;
@@ -759,7 +749,7 @@ snippet fef:o
 font-effect: outline;
 endsnippet
 snippet femp
-font-emphasize-position: ${1};${2}
+font-emphasize-position: ${1};
 endsnippet
 snippet femp:a
 font-emphasize-position: after;
@@ -768,7 +758,7 @@ snippet femp:b
 font-emphasize-position: before;
 endsnippet
 snippet fems
-font-emphasize-style: ${1};${2}
+font-emphasize-style: ${1};
 endsnippet
 snippet fems:ac
 font-emphasize-style: accent;
@@ -786,37 +776,37 @@ snippet fems:n
 font-emphasize-style: none;
 endsnippet
 snippet fem
-font-emphasize: ${1};${2}
+font-emphasize: ${1};
 endsnippet
 snippet ff
 font-family: ${1};
 endsnippet
 snippet ff:c
-font-family: ${1:'Monotype Corsiva','Comic Sans MS'},cursive;${2}
+font-family: ${1:'Monotype Corsiva','Comic Sans MS'},cursive;
 endsnippet
 snippet ff:f
-font-family: ${1:Capitals,Impact},fantasy;${2}
+font-family: ${1:Capitals,Impact},fantasy;
 endsnippet
 snippet ff:m
-font-family: ${1:Monaco,'Courier New'},monospace;${2}
+font-family: ${1:Monaco,'Courier New'},monospace;
 endsnippet
 snippet ff:ss
-font-family: ${1:Helvetica,Arial},sans-serif;${2}
+font-family: ${1:Helvetica,Arial},sans-serif;
 endsnippet
 snippet ff:s
-font-family: ${1:Georgia,'Times New Roman'},serif;${2}
+font-family: ${1:Georgia,'Times New Roman'},serif;
 endsnippet
 snippet fza
-font-size-adjust: ${1};${2}
+font-size-adjust: ${1};
 endsnippet
 snippet fza:n
 font-size-adjust: none;
 endsnippet
 snippet fz
-font-size: ${1};${2}
+font-size: ${1};
 endsnippet
 snippet fsm
-font-smooth: ${1};${2}
+font-smooth: ${1};
 endsnippet
 snippet fsm:aw
 font-smooth: always;
@@ -828,7 +818,7 @@ snippet fsm:n
 font-smooth: never;
 endsnippet
 snippet fst
-font-stretch: ${1};${2}
+font-stretch: ${1};
 endsnippet
 snippet fst:c
 font-stretch: condensed;
@@ -858,7 +848,7 @@ snippet fst:ue
 font-stretch: ultra-expanded;
 endsnippet
 snippet fs
-font-style: ${1};${2}
+font-style: ${1};
 endsnippet
 snippet fs:i
 font-style: italic;
@@ -870,7 +860,7 @@ snippet fs:o
 font-style: oblique;
 endsnippet
 snippet fv
-font-variant: ${1};${2}
+font-variant: ${1};
 endsnippet
 snippet fv:n
 font-variant: normal;
@@ -879,7 +869,7 @@ snippet fv:sc
 font-variant: small-caps;
 endsnippet
 snippet fw
-font-weight: ${1};${2}
+font-weight: ${1};
 endsnippet
 snippet fw:b
 font-weight: bold;
@@ -921,33 +911,33 @@ snippet fw:9
 font-weight: 900;
 endsnippet
 snippet f
-font: ${1:1em} ${2:Helvetica, Arial, sans-serif};${3}
+font: ${1:1em} ${2:Helvetica, Arial, sans-serif};
 endsnippet
 snippet h
-height: ${1};${2}
+height: ${1};
 endsnippet
 snippet h:a
 height: auto;
 endsnippet
 snippet l
-left: ${1};${2}
+left: ${1};
 endsnippet
 snippet l:a
 left: auto;
 endsnippet
 snippet lts
-letter-spacing: ${1};${2}
+letter-spacing: ${1};
 endsnippet
 snippet lh
-line-height: ${1};${2}
+line-height: ${1};
 endsnippet
 snippet lisi
-list-style-image: url(${1});${2}
+list-style-image: url(${1});
 endsnippet
 snippet lisi:n
 list-style-image: none;
 snippet lisp
-list-style-position: ${1};${2}
+list-style-position: ${1};
 endsnippet
 snippet lisp:i
 list-style-position: inside;
@@ -956,7 +946,7 @@ snippet lisp:o
 list-style-position: outside;
 endsnippet
 snippet list
-list-style-type: ${1};${2}
+list-style-type: ${1};
 endsnippet
 snippet list:c
 list-style-type: circle;
@@ -983,46 +973,46 @@ snippet list:ur
 list-style-type: upper-roman;
 endsnippet
 snippet lis
-list-style: ${1};${2}
+list-style: ${1};
 endsnippet
 snippet lis:n
 list-style: none;
 endsnippet
 snippet mb
-margin-bottom: ${1};${2}
+margin-bottom: ${1};
 endsnippet
 snippet mb:a
 margin-bottom: auto;
 endsnippet
 snippet ml
-margin-left: ${1};${2}
+margin-left: ${1};
 endsnippet
 snippet ml:a
 margin-left: auto;
 endsnippet
 snippet mr
-margin-right: ${1};${2}
+margin-right: ${1};
 endsnippet
 snippet mr:a
 margin-right: auto;
 endsnippet
 snippet mt
-margin-top: ${1};${2}
+margin-top: ${1};
 endsnippet
 snippet mt:a
 margin-top: auto;
 endsnippet
 snippet m
-margin: ${1};${2}
+margin: ${1};
 endsnippet
 snippet m:4
-margin: ${1:0} ${2:0} ${3:0} ${4:0};${5}
+margin: ${1:0} ${2:0} ${3:0} ${4:0};
 endsnippet
 snippet m:3
-margin: ${1:0} ${2:0} ${3:0};${5}
+margin: ${1:0} ${2:0} ${3:0};
 endsnippet
 snippet m:2
-margin: ${1:0} ${2:0};${5}
+margin: ${1:0} ${2:0};
 endsnippet
 snippet m:0
 margin: 0;
@@ -1034,25 +1024,25 @@ snippet m:0a
 margin: 0 auto;
 endsnippet
 snippet mah
-max-height: ${1};${2}
+max-height: ${1};
 endsnippet
 snippet mah:n
 max-height: none;
 endsnippet
 snippet maw
-max-width: ${1};${2}
+max-width: ${1};
 endsnippet
 snippet maw:n
 max-width: none;
 endsnippet
 snippet mih
-min-height: ${1};${2}
+min-height: ${1};
 endsnippet
 snippet miw
-min-width: ${1};${2}
+min-width: ${1};
 endsnippet
 snippet op
-opacity: ${1};${2}
+opacity: ${1};
 endsnippet
 snippet op:ie
 filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=${1:100});
@@ -1061,34 +1051,34 @@ snippet op:ms
 -ms-filter: 'progid:DXImageTransform.Microsoft.Alpha(Opacity=${1:100})';
 endsnippet
 snippet orp
-orphans: ${1};${2}
+orphans: ${1};
 endsnippet
 snippet o+
-outline: ${1:1px} ${2:solid} ${3:#000};${4}
+outline: ${1:1px} ${2:solid} ${3:#000};
 endsnippet
 snippet ouc
-outline-color: ${1:#000};${2}
+outline-color: ${1:#000};
 endsnippet
 snippet ouc:i
 outline-color: invert;
 endsnippet
 snippet oo
-outline-offset: ${1};${2}
+outline-offset: ${1};
 endsnippet
 snippet os
-outline-style: ${1};${2}
+outline-style: ${1};
 endsnippet
 snippet ow
-outline-width: ${1};${2}
+outline-width: ${1};
 endsnippet
 snippet o
-outline: ${1};${2}
+outline: ${1};
 endsnippet
 snippet o:n
 outline: none;
 endsnippet
 snippet ovs
-overflow-style: ${1};${2}
+overflow-style: ${1};
 endsnippet
 snippet ovs:a
 overflow-style: auto;
@@ -1106,7 +1096,7 @@ snippet ovs:s
 overflow-style: scrollbar;
 endsnippet
 snippet ovx
-overflow-x: ${1};${2}
+overflow-x: ${1};
 endsnippet
 snippet ovx:a
 overflow-x: auto;
@@ -1121,7 +1111,7 @@ snippet ovx:v
 overflow-x: visible;
 endsnippet
 snippet ovy
-overflow-y: ${1};${2}
+overflow-y: ${1};
 endsnippet
 snippet ovy:a
 overflow-y: auto;
@@ -1136,7 +1126,7 @@ snippet ovy:v
 overflow-y: visible;
 endsnippet
 snippet ov
-overflow: ${1};${2}
+overflow: ${1};
 endsnippet
 snippet ov:a
 overflow: auto;
@@ -1151,34 +1141,34 @@ snippet ov:v
 overflow: visible;
 endsnippet
 snippet pb
-padding-bottom: ${1};${2}
+padding-bottom: ${1};
 endsnippet
 snippet pl
-padding-left: ${1};${2}
+padding-left: ${1};
 endsnippet
 snippet pr
-padding-right: ${1};${2}
+padding-right: ${1};
 endsnippet
 snippet pt
-padding-top: ${1};${2}
+padding-top: ${1};
 endsnippet
 snippet p
-padding: ${1};${2}
+padding: ${1};
 endsnippet
 snippet p:4
-padding: ${1:0} ${2:0} ${3:0} ${4:0};${5}
+padding: ${1:0} ${2:0} ${3:0} ${4:0};
 endsnippet
 snippet p:3
-padding: ${1:0} ${2:0} ${3:0};${4}
+padding: ${1:0} ${2:0} ${3:0};
 endsnippet
 snippet p:2
-padding: ${1:0} ${2:0};${3}
+padding: ${1:0} ${2:0};
 endsnippet
 snippet p:0
 padding: 0;
 endsnippet
 snippet pgba
-page-break-after: ${1};${2}
+page-break-after: ${1};
 endsnippet
 snippet pgba:aw
 page-break-after: always;
@@ -1193,7 +1183,7 @@ snippet pgba:r
 page-break-after: right;
 endsnippet
 snippet pgbb
-page-break-before: ${1};${2}
+page-break-before: ${1};
 endsnippet
 snippet pgbb:aw
 page-break-before: always;
@@ -1208,7 +1198,7 @@ snippet pgbb:r
 page-break-before: right;
 endsnippet
 snippet pgbi
-page-break-inside: ${1};${2}
+page-break-inside: ${1};
 endsnippet
 snippet pgbi:a
 page-break-inside: auto;
@@ -1217,7 +1207,7 @@ snippet pgbi:av
 page-break-inside: avoid;
 endsnippet
 snippet -pos
-position: ${1};${2}
+position: ${1};
 endsnippet
 snippet -pos:a
 position: absolute;
@@ -1232,7 +1222,7 @@ snippet pos:s
 position: static;
 endsnippet
 snippet q
-quotes: ${1};${2}
+quotes: ${1};
 endsnippet
 snippet q:en
 quotes: '\201C' '\201D' '\2018' '\2019';
@@ -1244,7 +1234,7 @@ snippet q:ru
 quotes: '\00AB' '\00BB' '\201E' '\201C';
 endsnippet
 snippet rz
-resize: ${1};${2}
+resize: ${1};
 endsnippet
 snippet rz:b
 resize: both;
@@ -1259,7 +1249,7 @@ snippet rz:v
 resize: vertical;
 endsnippet
 snippet r
-right: ${1};${2}
+right: ${1};
 endsnippet
 snippet r:a
 right: auto;
@@ -1273,7 +1263,7 @@ snippet selection
 }
 endsnippet
 snippet tbl
-table-layout: ${1};${2}
+table-layout: ${1};
 endsnippet
 snippet tbl:a
 table-layout: auto;
@@ -1282,7 +1272,7 @@ snippet tbl:f
 table-layout: fixed;
 endsnippet
 snippet tal
-text-align-last: ${1};${2}
+text-align-last: ${1};
 endsnippet
 snippet tal:a
 text-align-last: auto;
@@ -1297,7 +1287,7 @@ snippet tal:r
 text-align-last: right;
 endsnippet
 snippet ta
-text-align: ${1};${2}
+text-align: ${1};
 endsnippet
 snippet ta:c
 text-align: center;
@@ -1309,7 +1299,7 @@ snippet ta:r
 text-align: right;
 endsnippet
 snippet td
-text-decoration: ${1};${2}
+text-decoration: ${1};
 endsnippet
 snippet td:l
 text-decoration: line-through;
@@ -1324,7 +1314,7 @@ snippet td:u
 text-decoration: underline;
 endsnippet
 snippet te
-text-emphasis: ${1};${2}
+text-emphasis: ${1};
 endsnippet
 snippet te:ac
 text-emphasis: accent;
@@ -1347,7 +1337,7 @@ snippet te:n
 text-emphasis: none;
 endsnippet
 snippet th
-text-height: ${1};${2}
+text-height: ${1};
 endsnippet
 snippet th:a
 text-height: auto;
@@ -1362,13 +1352,13 @@ snippet th:t
 text-height: text-size;
 endsnippet
 snippet ti
-text-indent: ${1};${2}
+text-indent: ${1};
 endsnippet
 snippet ti:-
 text-indent: -9999px;
 endsnippet
 snippet tj
-text-justify: ${1};${2}
+text-justify: ${1};
 endsnippet
 snippet tj:a
 text-justify: auto;
@@ -1392,31 +1382,31 @@ snippet tj:t
 text-justify: tibetan;
 endsnippet
 snippet to+
-text-outline: ${1:0} ${2:0} ${3:#000};${2}
+text-outline: ${1:0} ${2:0} ${3:#000};
 endsnippet
 snippet to
-text-outline: ${1};${2}
+text-outline: ${1};
 endsnippet
 snippet to:n
 text-outline: none;
 endsnippet
 snippet tr
-text-replace: ${1};${2}
+text-replace: ${1};
 endsnippet
 snippet tr:n
 text-replace: none;
 endsnippet
 snippet tsh+
-text-shadow: ${1:0} ${2:0} ${3:0} ${4:#000};${5}
+text-shadow: ${1:0} ${2:0} ${3:0} ${4:#000};
 endsnippet
 snippet tsh
-text-shadow: ${1};${2}
+text-shadow: ${1};
 endsnippet
 snippet tsh:n
 text-shadow: none;
 endsnippet
 snippet tt
-text-transform: ${1};${2}
+text-transform: ${1};
 endsnippet
 snippet tt:c
 text-transform: capitalize;
@@ -1431,7 +1421,7 @@ snippet tt:u
 text-transform: uppercase;
 endsnippet
 snippet tw
-text-wrap: ${1};${2}
+text-wrap: ${1};
 endsnippet
 snippet tw:no
 text-wrap: none;
@@ -1446,13 +1436,13 @@ snippet tw:u
 text-wrap: unrestricted;
 endsnippet
 snippet t
-top: ${1};${2}
+top: ${1};
 endsnippet
 snippet t:a
 top: auto;
 endsnippet
 snippet va
-vertical-align: ${1};${2}
+vertical-align: ${1};
 endsnippet
 snippet va:bl
 vertical-align: baseline;
@@ -1479,7 +1469,7 @@ snippet va:t
 vertical-align: top;
 endsnippet
 snippet v
-visibility: ${1};${2}
+visibility: ${1};
 endsnippet
 snippet v:c
 visibility: collapse;
@@ -1491,13 +1481,13 @@ snippet v:v
 visibility: visible;
 endsnippet
 snippet wf
--webkit-font-smoothing: ${1};${2}
+-webkit-font-smoothing: ${1};
 endsnippet
 snippet wf:a
 -webkit-font-smoothing: antialiased;
 endsnippet
 snippet whsc
-white-space-collapse: ${1};${2}
+white-space-collapse: ${1};
 endsnippet
 snippet whsc:ba
 white-space-collapse: break-all;
@@ -1515,7 +1505,7 @@ snippet whsc:n
 white-space-collapse: normal;
 endsnippet
 snippet whs
-white-space: ${1};${2}
+white-space: ${1};
 endsnippet
 snippet whs:n
 white-space: normal;
@@ -1533,16 +1523,16 @@ snippet whs:p
 white-space: pre;
 endsnippet
 snippet wid
-widows: ${1};${2}
+widows: ${1};
 endsnippet
 snippet w
-width: ${1};${2}
+width: ${1};
 endsnippet
 snippet w:a
 width: auto;
 endsnippet
 snippet wob
-word-break: ${1};${2}
+word-break: ${1};
 endsnippet
 snippet wob:ba
 word-break: break-all;
@@ -1560,10 +1550,10 @@ snippet wob:n
 word-break: normal;
 endsnippet
 snippet wos
-word-spacing: ${1};${2}
+word-spacing: ${1};
 endsnippet
 snippet wow
-word-wrap: ${1};${2}
+word-wrap: ${1};
 endsnippet
 snippet wow:no
 word-wrap: none;
@@ -1578,7 +1568,7 @@ snippet wow:u
 word-wrap: unrestricted;
 endsnippet
 snippet z
-z-index: ${1};${2}
+z-index: ${1};
 endsnippet
 snippet z:a
 z-index: auto;
