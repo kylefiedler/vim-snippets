@@ -6,7 +6,7 @@ snippet ext
 @extend ${1};
 endsnippet
 snippet inc
-@include $1($2);
+@include ${1}(${2});
 endsnippet
 snippet @m
 @media ${1} {
@@ -90,20 +90,11 @@ endsnippet
 snippet gw
 grid-width(${1})
 endsnippet
-snippet gwv
-$gw-column: 100px;          // Column Width
-$gw-gutter: 40px;           // Gutter Width
-endsnippet
 snippet flg
 flex-grid(${1})
 endsnippet
 snippet flgu
 flex-gutter(${1})
-endsnippet
-snippet fgv
-$fg-column: 60px;             // Column Width
-$fg-gutter: 25px;             // Gutter Width
-$fg-max-columns: 12;          // Total Columns For Main Container
 endsnippet
 snippet mods
 modular-scale(${1}, ${2}, ${3:1.618})
@@ -257,10 +248,10 @@ snippet bd
 border: ${1:1px} ${2:solid} ${3:$base-border-color};
 endsnippet
 snippet bdb+
-border-bottom: ${1:1px} ${2:solid} ${3:#000};
+border-bottom: ${1:1px} ${2:solid} ${3:$base-border-color};
 endsnippet
 snippet bdbc
-border-bottom-color: ${1:#000};
+border-bottom-color: ${1:black};
 endsnippet
 snippet bdbi
 border-bottom-image: url(${1});
@@ -323,7 +314,7 @@ snippet bdcl:s
 border-collapse: separate;
 endsnippet
 snippet bdc
-border-color: ${1:#000};
+border-color: ${1:black};
 endsnippet
 snippet bdci
 border-corner-image: url(${1});
@@ -365,10 +356,10 @@ snippet bdi:n
 border-image: none;
 endsnippet
 snippet bdl+
-border-left: ${1:1px} ${2:solid} ${3:#000};
+border-left: ${1:1px} ${2:solid} ${3:$base-border-color};
 endsnippet
 snippet bdlc
-border-left-color: ${1:#000};
+border-left-color: ${1:black};
 endsnippet
 snippet bdli
 border-left-image: url(${1});
@@ -401,10 +392,10 @@ snippet bdrz
 border-radius: ${1};
 endsnippet
 snippet bdr+
-border-right: ${1:1px} ${2:solid} ${3:#000};
+border-right: ${1:1px} ${2:solid} ${3:$base-border-color};
 endsnippet
 snippet bdrc
-border-right-color: ${1:#000};
+border-right-color: ${1:$base-border-color};
 endsnippet
 snippet bdri
 border-right-image: url(${1});
@@ -473,10 +464,10 @@ snippet bds:w
 border-style: wave;
 endsnippet
 snippet bdt+
-border-top: ${1:1px} ${2:solid} ${3:#000};
+border-top: ${1:1px} ${2:solid} ${3:$base-border-color};
 endsnippet
 snippet bdtc
-border-top-color: ${1:#000};
+border-top-color: ${1:$base-border-color};
 endsnippet
 snippet bdti
 border-top-image: url(${1});
@@ -539,7 +530,7 @@ snippet b:a
 bottom: auto;
 endsnippet
 snippet bxs
-box-shadow: ${1:0} ${2:0} ${3:0} ${4:#000};
+box-shadow: ${1:0} ${2:0} ${3:0} ${4:black};
 endsnippet
 snippet bxs-
 box-shadow: ${1};
@@ -590,7 +581,7 @@ snippet cp:r
 clip: rect(${1:0} ${2:0} ${3:0} ${4:0});
 endsnippet
 snippet c
-color: ${1:#000};
+color: ${1:black};
 endsnippet
 snippet ct
 content: ${1};
@@ -779,7 +770,7 @@ snippet fem
 font-emphasize: ${1};
 endsnippet
 snippet ff
-font-family: ${1};
+font-family: ${1:$base-font-family};
 endsnippet
 snippet ff:c
 font-family: ${1:'Monotype Corsiva','Comic Sans MS'},cursive;
@@ -1054,10 +1045,10 @@ snippet orp
 orphans: ${1};
 endsnippet
 snippet o+
-outline: ${1:1px} ${2:solid} ${3:#000};
+outline: ${1:1px} ${2:solid} ${3:black};
 endsnippet
 snippet ouc
-outline-color: ${1:#000};
+outline-color: ${1:black};
 endsnippet
 snippet ouc:i
 outline-color: invert;
@@ -1382,7 +1373,7 @@ snippet tj:t
 text-justify: tibetan;
 endsnippet
 snippet to+
-text-outline: ${1:0} ${2:0} ${3:#000};
+text-outline: ${1:0} ${2:0} ${3:black};
 endsnippet
 snippet to
 text-outline: ${1};
@@ -1397,7 +1388,7 @@ snippet tr:n
 text-replace: none;
 endsnippet
 snippet tsh+
-text-shadow: ${1:0} ${2:0} ${3:0} ${4:#000};
+text-shadow: ${1:0} ${2:0} ${3:0} ${4:black};
 endsnippet
 snippet tsh
 text-shadow: ${1};
