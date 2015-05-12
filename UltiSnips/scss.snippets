@@ -81,15 +81,15 @@ snippet lg
 endsnippet
 
 snippet pos
-@include position(${1}, ${2});
+@include position(${1}, ${2:null} ${3:null} ${4:null} ${5:null});
 endsnippet
 
 snippet pos:a
-@include position(absolute, ${1:0} ${2:0} ${3:0} ${4:0});
+@include position(absolute, ${1:null} ${2:null} ${3:null} ${4:null});
 endsnippet
 
 snippet pos:f
-@include position(fixed, ${1:0} ${2:0} ${3:0} ${4:0}});
+@include position(fixed, ${1:null} ${2:null} ${3:null} ${4:null});
 endsnippet
 
 snippet rg
@@ -167,5 +167,3 @@ endsnippet
 snippet break
 ${1}: new-breakpoint(${2});
 endsnippet
-
-
