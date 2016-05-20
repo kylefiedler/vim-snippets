@@ -7,6 +7,82 @@ snippet //
 //---------------------------------------- //
 endsnippet
 
+snippet ai
+align-items: ${1};
+endsnippet
+
+snippet ai:fs
+align-items: flex-start;
+endsnippet
+
+snippet ai:fe
+align-items: flex-end;
+endsnippet
+
+snippet ai:c
+align-items: center;
+endsnippet
+
+snippet ai:b
+align-items: baseline;
+endsnippet
+
+snippet ai:s
+align-items: stretch;
+endsnippet
+
+snippet as
+align-self: ${1};
+endsnippet
+
+snippet as:fs
+align-self: flex-start;
+endsnippet
+
+snippet as:fe
+align-self: flex-end;
+endsnippet
+
+snippet as:c
+align-self: center;
+endsnippet
+
+snippet as:b
+align-self: baseline;
+endsnippet
+
+snippet as:s
+align-self: stretch;
+endsnippet
+
+snippet ac
+align-content: ${1};
+endsnippet
+
+snippet ac:fs
+align-content: flex-start;
+endsnippet
+
+snippet ac:fe
+align-content: flex-end;
+endsnippet
+
+snippet ac:c
+align-content: center;
+endsnippet
+
+snippet ac:sb
+align-content: space-between;
+endsnippet
+
+snippet ac:sa
+align-content: space-around;
+endsnippet
+
+snippet ac:s
+align-content: stretch;
+endsnippet
+
 snippet bg+
 background: ${1:#fff} url(${2}) ${3:0} ${4:0} ${5:no-repeat};
 endsnippet
@@ -691,6 +767,10 @@ snippet d:cp
 display: compact;
 endsnippet
 
+snippet d:f
+display: flex;
+endsnippet
+
 snippet d:ib
 display: inline-block;
 endsnippet
@@ -767,6 +847,66 @@ snippet exp
 expression()
 endsnippet
 
+snippet fx
+flex: ${1:0} ${2:1} ${3:auto};
+endsnippet
+
+snippet fxg
+flex-grow: ${1};
+endsnippet
+
+snippet fxd
+flex-direction: ${1};
+endsnippet
+
+snippet fxd:r
+flex-direction: row;
+endsnippet
+
+snippet fxd:rr
+flex-direction: row-reverse;
+endsnippet
+
+snippet fxd:c
+flex-direction: column;
+endsnippet
+
+snippet fxd:cr
+flex-direction: column-reverse;
+endsnippet
+
+snippet fxb
+flex-basis: ${1};
+endsnippet
+
+snippet fxb:c
+flex-basis: content;
+endsnippet
+
+snippet fxf
+flex-flow: ${1};
+endsnippet
+
+snippet fxs
+flex-shrink: ${1};
+endsnippet
+
+snippet fxw
+flex-wrap: ${1};
+endsnippet
+
+snippet fxw
+flex-wrap: nowrap;
+endsnippet
+
+snippet fxw:w
+flex-wrap: wrap;
+endsnippet
+
+snippet fxw:wr
+flex-wrap: wrap-reverse;
+endsnippet
+
 snippet fl
 float: ${1};
 endsnippet
@@ -783,7 +923,7 @@ snippet fl:r
 float: right;
 endsnippet
 
-snippet f+
+snippet f
 font: ${1:1em} ${2:Georgia},${3:serif};
 endsnippet
 
@@ -1007,6 +1147,30 @@ snippet f
 font: ${1:1em} ${2:Helvetica, Arial, sans-serif};
 endsnippet
 
+snippet jc
+justify-content: ${1};
+endsnippet
+
+snippet jc:fs
+justify-content: flex-start;
+endsnippet
+
+snippet jc:fe
+justify-content: flex-end;
+endsnippet
+
+snippet jc:c
+justify-content: center;
+endsnippet
+
+snippet jc:sb
+justify-content: space-between;
+endsnippet
+
+snippet jc:sa
+justify-content: space-around;
+endsnippet
+
 snippet h
 height: ${1};
 endsnippet
@@ -1179,6 +1343,10 @@ endsnippet
 
 snippet op
 opacity: ${1};
+endsnippet
+
+snippet or
+order: ${1};
 endsnippet
 
 snippet orp
