@@ -223,8 +223,12 @@ snippet bg:n
 background: none;
 endsnippet
 
-snippet bd
+snippet bd+
 border: ${1:1px} ${2:solid} ${3:$base-border-color};
+endsnippet
+
+snippet bd
+border: ${1:$base-border};
 endsnippet
 
 snippet bdb+
@@ -625,6 +629,10 @@ endsnippet
 
 snippet bxz:cb
 box-sizing: content-box;
+endsnippet
+
+snippet ca
+calc(${1})
 endsnippet
 
 snippet cps
